@@ -15,6 +15,13 @@ if not TOKEN:
 
 DATA_FILE = "bot_data.json"
 
+OWNER = os.getenv("OWNER_ID")
+if not OWNER:
+    raise ValueError("OWNER ID MUST BE SET")
+try:
+    OWNER = int(OWNER)
+except:
+    raise ValueError("OWNER ID MUST BE A NUMBER")
 
 data = {"group_id": None, "topics": {}}
 if os.path.exists(DATA_FILE):
@@ -28,6 +35,9 @@ def save_data():
 
 
 async def start(update: Update, context: CallbackContext):
+    if update.effective_user.id != OWNER:
+        await update.message.reply_text("Do not chat with me, I am a bot!")
+        return
     message = (
         "*Welcome to AwesomeBro!*\n\n"
         "Here are the available commands:\n\n"
@@ -51,6 +61,9 @@ async def start(update: Update, context: CallbackContext):
 
 async def set_group(update: Update, context: CallbackContext):
     """Sets the group ID for the bot"""
+    if update.effective_user.id != OWNER:
+        await update.message.reply_text("Do not chat with me, I am a bot!")
+        return
     try:
         group_id = int(update.message.text.split()[-1])
     except ValueError:
@@ -63,6 +76,9 @@ async def set_group(update: Update, context: CallbackContext):
 
 async def add_topic(update: Update, context: CallbackContext):
     """Manually adds a topic"""
+    if update.effective_user.id != OWNER:
+        await update.message.reply_text("Do not chat with me, I am a bot!")
+        return
     parts = update.message.text.split(" ", 2)
     if len(parts) < 3:
         await update.message.reply_text("Usage: /addtopic <topic_name> <topic_id>")
@@ -83,11 +99,17 @@ async def add_topic(update: Update, context: CallbackContext):
 
 async def list_topics(update: Update, context: CallbackContext):
     """Lists all manually added topics."""
+    if update.effective_user.id != OWNER:
+        await update.message.reply_text("Do not chat with me, I am a bot!")
+        return
     topics = "\n".join([f"{name}: {tid}" for name, tid in data["topics"].items()])
     await update.message.reply_text(f"Available topics:\n{topics if topics else 'No topics found.'}")
 
 async def add_quiz(update: Update, context: CallbackContext):
     """Adds a quiz to a specific topic and stores it in a JSON file."""
+    if update.effective_user.id != OWNER:
+        await update.message.reply_text("Do not chat with me, I am a bot!")
+        return
     bot = context.bot
     parts = update.message.text.split("|")
     
@@ -143,6 +165,9 @@ async def add_quiz(update: Update, context: CallbackContext):
 
 async def bulk_add(update: Update, context: CallbackContext):
     """Handles JSON file upload and adds quizzes in bulk, storing them in separate topic files."""
+    if update.effective_user.id != OWNER:
+        await update.message.reply_text("Do not chat with me, I am a bot!")
+        return
     if not update.message.document:
         await update.message.reply_text("Please upload a JSON file.")
         return
@@ -216,6 +241,9 @@ async def bulk_add(update: Update, context: CallbackContext):
 
 
 async def remove_topic(update: Update, context: CallbackContext):
+    if update.effective_user.id != OWNER:
+        await update.message.reply_text("Do not chat with me, I am a bot!")
+        return
     """Removes a topic from the bot."""
     parts = update.message.text.split(" ", 1)
     if len(parts) < 2:
@@ -232,6 +260,9 @@ async def remove_topic(update: Update, context: CallbackContext):
 
 async def clear_responses(update: Update, context: CallbackContext):
     """Clears responses by stopping active quizzes."""
+    if update.effective_user.id != OWNER:
+        await update.message.reply_text("Do not chat with me, I am a bot!")
+        return
     bot = context.bot
     try:
         chat_id = data["group_id"]
