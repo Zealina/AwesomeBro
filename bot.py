@@ -120,11 +120,11 @@ async def add_quiz(update: Update, context: CallbackContext):
     await update.message.reply_text("Quiz added successfully!")
 
 # Webhook endpoint
-@my_app.route(f"/{TOKEN}", methods=["POST"])
-async def webhook():
+@my_app.route(f"/webhook", methods=["POST"])
+def webhook():
     """Receives Telegram webhook updates and processes them"""
     update = Update.de_json(request.get_json(), app.bot)
-    await app.process_update(update)
+    app.process_update(update)
     return "OK", 200
 
 # Set up command handlers
