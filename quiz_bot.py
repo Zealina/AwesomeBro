@@ -4,41 +4,50 @@ import os
 import json
 from telegram import Bot, Poll, Update, MessageEntity, InputFile
 from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters
-from flask import Flask, jsonify
 
-my_app = Flask('__main__')
-@my_app.route("/greet")
-
-def greet():
-    return(jsonify({"greeting": "Be thou greeted!"}))
 
 TOKEN = os.getenv("BOT_TOKEN")
 if not TOKEN:
     raise ValueError("BOT_TOKEN environment variable is not set!")
 
+
 DATA_FILE = "bot_data.json"
+
 
 data = {"group_id": None, "topics": {}}
 if os.path.exists(DATA_FILE):
     with open(DATA_FILE, "r") as f:
         data = json.load(f)
 
+
 def save_data():
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=4)
 
+
 async def start(update: Update, context: CallbackContext):
-    await update.message.reply_text(
-        "Welcome to the AwesomeBro! Commands:\n"
-        "/start - Lists all the available commands\n"
-        "/setgroup - Selects the group to add the questions\n"
-        "/listtopics - Lists all available topics in the group\n"
-        "/addtopic - Manually add a topic\n"
-        "/addquiz - Add a single question to the bot\n"
-        "/bulkadd - Upload a JSON file with multiple questions\n"
-        "/removetopic - Removes a topic from the list\n"
-        "/clearresponses - Resets the active quizzes"
+    message = (
+        "*Welcome to AwesomeBro!*\n\n"
+        "Here are the available commands:\n\n"
+        "🔹 *Basic Commands:*\n"
+        "  ➤ `/start` – Shows this help message.\n\n"
+        "🔹 *Group & Topics:*\n"
+        "  ➤ `/setgroup` – Select a group for adding questions.\n"
+        "     _Usage:_ `/setgroup @YourGroupName`\n"
+        "  ➤ `/listtopics` – List all topics in the selected group.\n"
+        "  ➤ `/addtopic` – Manually add a topic.\n"
+        "     _Usage:_ `/addtopic Biology`\n"
+        "  ➤ `/removetopic` – Remove a topic from the list.\n"
+        "     _Usage:_ `/removetopic Biology`\n\n"
+        "🔹 *Quiz Management:*\n"
+        "  ➤ `/addquiz` – Add a single question to the bot.\n"
+        "     _Usage:_ `/addquiz What is the capital of France?; Paris`\n"
+        "  ➤ `/bulkadd` – Upload a JSON file with multiple questions.\n"
+        "  ➤ `/clearresponses` – Reset active quizzes.\n"
     )
+
+    await update.message.reply_text(message, parse_mode=ParseMode.MARKDOWN)
+
 
 async def set_group(update: Update, context: CallbackContext):
     """Sets the group ID for the bot"""
@@ -51,8 +60,9 @@ async def set_group(update: Update, context: CallbackContext):
     save_data()
     await update.message.reply_text(f"Group set successfully: {group_id}!")
 
+
 async def add_topic(update: Update, context: CallbackContext):
-    """Manually adds a topic."""
+    """Manually adds a topic"""
     parts = update.message.text.split(" ", 2)
     if len(parts) < 3:
         await update.message.reply_text("Usage: /addtopic <topic_name> <topic_id>")
@@ -67,10 +77,12 @@ async def add_topic(update: Update, context: CallbackContext):
     save_data()
     await update.message.reply_text(f"Topic '{topic_name}' added successfully!")
 
+
 async def list_topics(update: Update, context: CallbackContext):
     """Lists all manually added topics."""
     topics = "\n".join([f"{name}: {tid}" for name, tid in data["topics"].items()])
     await update.message.reply_text(f"Available topics:\n{topics if topics else 'No topics found.'}")
+
 
 async def add_quiz(update: Update, context: CallbackContext):
     """Adds a quiz to a specific topic in the group."""
@@ -102,6 +114,7 @@ async def add_quiz(update: Update, context: CallbackContext):
         message_thread_id=topic_id
     )
     await update.message.reply_text("Quiz added successfully!")
+
 
 async def bulk_add(update: Update, context: CallbackContext):
     """Handles JSON file upload and adds quizzes in bulk."""
@@ -152,6 +165,7 @@ async def bulk_add(update: Update, context: CallbackContext):
     summary += f"\nFailed: {failed}"
     await update.message.reply_text(summary)
 
+
 async def remove_topic(update: Update, context: CallbackContext):
     """Removes a topic from the bot."""
     parts = update.message.text.split(" ", 1)
@@ -165,6 +179,7 @@ async def remove_topic(update: Update, context: CallbackContext):
         await update.message.reply_text(f"Topic '{topic_name}' removed successfully!")
     else:
         await update.message.reply_text(f"Topic '{topic_name}' not found.")
+
 
 async def clear_responses(update: Update, context: CallbackContext):
     """Clears responses by stopping active quizzes."""
@@ -181,6 +196,7 @@ async def clear_responses(update: Update, context: CallbackContext):
     except Exception as e:
         await update.message.reply_text(f"Error resetting responses: {str(e)}")
 
+
 app = Application.builder().token(TOKEN).build()
 app.add_handler(CommandHandler("removetopic", remove_topic))
 app.add_handler(CommandHandler("clearresponses", clear_responses))
@@ -191,8 +207,7 @@ app.add_handler(CommandHandler("listtopics", list_topics))
 app.add_handler(CommandHandler("addquiz", add_quiz))
 app.add_handler(MessageHandler(filters.Document.ALL, bulk_add))
 
+
 if __name__ == "__main__":
-    print("Bot is running...")
     app.run_polling()
     my_app.run()
-    print("Never got here")
