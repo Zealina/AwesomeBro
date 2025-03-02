@@ -161,8 +161,10 @@ async def bulk_add(update: Update, context: CallbackContext):
     bot = context.bot
     added = {}
     failed = 0
+    count = 0
 
     for quiz in quizzes:
+        count += 1
         try:
             topic_name = quiz["topic"].strip().lower()
             question = quiz["question"].strip()
@@ -201,7 +203,8 @@ async def bulk_add(update: Update, context: CallbackContext):
             )
 
             added[topic_name] = added.get(topic_name, 0) + 1
-        except Exception:
+        except Exception as e:
+            print(f"{count}. {e}")
             failed += 1
 
     summary = "Bulk upload summary:\n"
