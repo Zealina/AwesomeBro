@@ -4,6 +4,7 @@ import os
 import json
 from telegram import Bot, Poll, Update, MessageEntity, InputFile
 from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters
+from telegram.constants import ParseMode
 
 
 TOKEN = os.getenv("BOT_TOKEN")
@@ -42,10 +43,8 @@ async def start(update: Update, context: CallbackContext):
         "🔹 *Quiz Management:*\n"
         "  ➤ `/addquiz` – Add a single question to the bot.\n"
         "     _Usage:_ `/addquiz What is the capital of France?; Paris`\n"
-        "  ➤ `/bulkadd` – Upload a JSON file with multiple questions.\n"
-        "  ➤ `/clearresponses` – Reset active quizzes.\n"
+        "  ➤ `/clearresponses` – Reset active quizzes."
     )
-
     await update.message.reply_text(message, parse_mode=ParseMode.MARKDOWN)
 
 
@@ -75,6 +74,9 @@ async def add_topic(update: Update, context: CallbackContext):
         return
     data["topics"][topic_name] = topic_id
     save_data()
+    with open(f"{topic_name}.json", 'w') as fp:
+        json.dump(fp, [])
+        print(f"{topic_name}.json has been created!")
     await update.message.reply_text(f"Topic '{topic_name}' added successfully!")
 
 
@@ -83,17 +85,19 @@ async def list_topics(update: Update, context: CallbackContext):
     topics = "\n".join([f"{name}: {tid}" for name, tid in data["topics"].items()])
     await update.message.reply_text(f"Available topics:\n{topics if topics else 'No topics found.'}")
 
-
 async def add_quiz(update: Update, context: CallbackContext):
-    """Adds a quiz to a specific topic in the group."""
+    """Adds a quiz to a specific topic and stores it in a JSON file."""
     bot = context.bot
     parts = update.message.text.split("|")
+    
     if len(parts) < 4:
         await update.message.reply_text("Usage: /addquiz topic | question | option1 | option2 | ... | correct_option_index")
         return
+
     topic_name = parts[0].replace("/addquiz ", "").strip().lower()
     question = parts[1].strip()
     options = [opt.strip() for opt in parts[2:-1]]
+    
     try:
         correct_index = int(parts[-1].strip())
         if correct_index < 0 or correct_index >= len(options):
@@ -101,10 +105,29 @@ async def add_quiz(update: Update, context: CallbackContext):
     except ValueError:
         await update.message.reply_text("Invalid correct option index.")
         return
+
     if topic_name not in data["topics"]:
         await update.message.reply_text(f"Topic '{topic_name}' not found.")
         return
+
     topic_id = data["topics"][topic_name]
+    topic_file = f"{topic_name}.json"
+    quiz_entry = {
+        "question": question,
+        "options": options,
+        "correct_option": correct_index
+    }
+
+    if os.path.exists(topic_file):
+        with open(topic_file, "r") as f:
+            quizzes = json.load(f)
+    else:
+        quizzes = []
+
+    quizzes.append(quiz_entry)
+    with open(topic_file, "w") as f:
+        json.dump(quizzes, f, indent=4)
+
     await bot.send_poll(
         chat_id=data["group_id"],
         question=question,
@@ -113,41 +136,61 @@ async def add_quiz(update: Update, context: CallbackContext):
         correct_option_id=correct_index,
         message_thread_id=topic_id
     )
-    await update.message.reply_text("Quiz added successfully!")
+
+    await update.message.reply_text(f"Quiz added to '{topic_name}' and stored successfully!")
 
 
 async def bulk_add(update: Update, context: CallbackContext):
-    """Handles JSON file upload and adds quizzes in bulk."""
+    """Handles JSON file upload and adds quizzes in bulk, storing them in separate topic files."""
     if not update.message.document:
         await update.message.reply_text("Please upload a JSON file.")
         return
+
     file = await context.bot.get_file(update.message.document.file_id)
     file_path = f"{file.file_id}.json"
     await file.download_to_drive(file_path)
+
     try:
         with open(file_path, "r") as f:
             quizzes = json.load(f)
     except json.JSONDecodeError:
         await update.message.reply_text("Invalid JSON file.")
         return
+
     os.remove(file_path)
-    
     bot = context.bot
     added = {}
     failed = 0
-    
+
     for quiz in quizzes:
         try:
             topic_name = quiz["topic"].strip().lower()
             question = quiz["question"].strip()
             options = quiz["options"]
             correct_index = int(quiz["correct_option"])
-            
+
             if topic_name not in data["topics"]:
                 failed += 1
                 continue
-            
+
             topic_id = data["topics"][topic_name]
+            topic_file = f"{topic_name}.json"
+            
+            if os.path.exists(topic_file):
+                with open(topic_file, "r") as f:
+                    topic_quizzes = json.load(f)
+            else:
+                topic_quizzes = []
+
+            topic_quizzes.append({
+                "question": question,
+                "options": options,
+                "correct_option": correct_index
+            })
+
+            with open(topic_file, "w") as f:
+                json.dump(topic_quizzes, f, indent=4)
+
             await bot.send_poll(
                 chat_id=data["group_id"],
                 question=question,
@@ -156,10 +199,11 @@ async def bulk_add(update: Update, context: CallbackContext):
                 correct_option_id=correct_index,
                 message_thread_id=topic_id
             )
+
             added[topic_name] = added.get(topic_name, 0) + 1
         except Exception:
             failed += 1
-    
+
     summary = "Bulk upload summary:\n"
     summary += "\n".join([f"{topic}: {count} added" for topic, count in added.items()])
     summary += f"\nFailed: {failed}"
@@ -209,5 +253,5 @@ app.add_handler(MessageHandler(filters.Document.ALL, bulk_add))
 
 
 if __name__ == "__main__":
+    print("Bot is running...!")
     app.run_polling()
-    my_app.run()
