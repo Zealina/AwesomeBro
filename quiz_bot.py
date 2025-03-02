@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Create MCQs and Organize Quizzes"""
+import asyncio
 import os
 import json
 from telegram import Bot, Poll, Update, MessageEntity, InputFile
@@ -203,6 +204,7 @@ async def bulk_add(update: Update, context: CallbackContext):
             )
 
             added[topic_name] = added.get(topic_name, 0) + 1
+            await asyncio.sleep(1.1)
         except Exception as e:
             print(f"{count}. {e}")
             failed += 1
