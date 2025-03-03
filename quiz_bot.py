@@ -229,7 +229,7 @@ async def bulk_add(update: Update, context: CallbackContext):
             )
 
             added[topic_name] = added.get(topic_name, 0) + 1
-            await asyncio.sleep(1.1)
+            await asyncio.sleep(5.1)
         except Exception as e:
             print(f"{count}. {e}")
             failed += 1
