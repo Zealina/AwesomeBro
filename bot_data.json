@@ -2,8 +2,9 @@
     "group_id": -1002384524300,
     "topics": {
         "micro": 31,
-	"morbid": 22,
-	"chem_path": 20,
-	"hematology": 29
+        "morbid": 22,
+        "chem_path": 20,
+        "hematology": 29,
+        "pharmacology": 616
     }
 }
