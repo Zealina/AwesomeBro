@@ -290,7 +290,7 @@ async def list_groups(update: Update, context: CallbackContext):
     if update.effective_user.id != OWNER:
         await update.message.reply_text("Do not chat with me, I don\'t know you!")
         return
-    groups_list = "\n".join(data[groups])
+    groups_list = "\n".join(data["groups"])
     text = f"Available Groups:: \n {groups_list}"
     await update.message.reply_text(text)
 
