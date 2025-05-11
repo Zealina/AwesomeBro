@@ -199,6 +199,7 @@ async def bulk_add(update: Update, context: CallbackContext):
         with open(file_path, "r") as f:
             quizzes = json.load(f)
     except json.JSONDecodeError as e:
+        os.remove(file_path)
         await update.message.reply_text(f"Invalid JSON file: {e}.")
         return
 
