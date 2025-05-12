@@ -209,10 +209,11 @@ async def bulk_add(update: Update, context: CallbackContext):
     failed = 0
     count = 0
 
+    await update.message.reply_text("The file has been read successfully!")
+
     for quiz in quizzes:
         count += 1
         try:
-            print("Beginning the try block...")
             topic_name = quiz["topic"].strip().lower()
             question = quiz["question"].strip()
             options = quiz["options"]
@@ -221,28 +222,10 @@ async def bulk_add(update: Update, context: CallbackContext):
             if topic_name not in data[current_group]["topics"].keys():
                 failed += 1
                 continue
-            print(f"Passed the keys check for topics in group1! Topic is: {topic_name}")
 
             topic_id = data[current_group]["topics"][topic_name]
             topic_file = f"{current_group}_{topic_name}.json"
             
-            if os.path.exists(topic_file):
-                with open(topic_file, "r") as f:
-                    topic_quizzes = json.load(f)
-            else:
-                topic_quizzes = []
-
-            topic_quizzes.append({
-                "question": question,
-                "options": options,
-                "correct_option": correct_index
-            })
-            print("About to write the question to file")
-
-            with open(topic_file, "w") as f:
-                json.dump(topic_quizzes, f, indent=4)
-            print("The writing was done")
-
             await bot.send_poll(
                 chat_id=int(current_group),
                 question=question,
@@ -251,7 +234,6 @@ async def bulk_add(update: Update, context: CallbackContext):
                 correct_option_id=correct_index,
                 message_thread_id=topic_id
             )
-            print("Should be sent to the group by now")
             added[topic_name] = added.get(topic_name, 0) + 1
             await asyncio.sleep(5.1)
         except Exception as e:
