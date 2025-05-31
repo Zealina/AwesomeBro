@@ -1,5 +1,8 @@
 python-telegram-bot
+dotenv
 flask
 flask[async]
 waitress
 gunicorn
+uvicorn
+asgiref
