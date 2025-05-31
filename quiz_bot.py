@@ -110,8 +110,6 @@ async def set_group(update: Update, context: CallbackContext):
         return
 
     group_id = update.message.text
-    print(group_id)
-    return
 
     if group_id not in data["groups"]:
         data["groups"].append(group_id)
