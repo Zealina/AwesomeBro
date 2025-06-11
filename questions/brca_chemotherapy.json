@@ -1,0 +1,332 @@
+[
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is LEAST likely to be used in metastatic breast cancer?",
+    "options": [
+      "Trastuzumab in HER2-positive tumors",
+      "Tamoxifen in ER-negative tumors",
+      "Paclitaxel monotherapy",
+      "CMF"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a determinant of chemotherapy choice in breast cancer?",
+    "options": [
+      "Axillary node involvement",
+      "Patient\u2019s shoe size",
+      "Tumor HER2 status",
+      "Financial status"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which prognostic factor does NOT influence chemotherapy choice?",
+    "options": [
+      "Menopausal status",
+      "HER2 status",
+      "Ki-67 index",
+      "Patient\u2019s favorite color"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which drug is an example of a microtubule super-stabilizer?",
+    "options": [
+      "Cyclophosphamide",
+      "Paclitaxel",
+      "5-Fluorouracil",
+      "Doxorubicin"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "The AC-T regimen consists of:",
+    "options": [
+      "Adriamycin + Capecitabine, then Taxotere",
+      "Anthracycline + Cisplatin, then Taxane",
+      "Adriamycin + Cyclophosphamide, then Taxol",
+      "Aromatase inhibitor + Cyclophosphamide, then Trastuzumab"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a component of the CMF regimen?",
+    "options": [
+      "Cyclophosphamide",
+      "Methotrexate",
+      "Mitomycin-C",
+      "Fluorouracil"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is TRUE about triple-negative breast cancer?",
+    "options": [
+      "It is best treated with trastuzumab",
+      "It lacks ER, PR, and HER2 expression",
+      "It is HER2-positive",
+      "It responds well to hormonal therapy"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a common adjuvant regimen for early breast cancer in Nigeria?",
+    "options": [
+      "CMF",
+      "Vinorelbine + Cisplatin",
+      "AC-T",
+      "Capecitabine monotherapy"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "In ER-positive, HER2-negative breast cancer, which agent is typically added to chemotherapy?",
+    "options": [
+      "Cisplatin",
+      "Gemcitabine",
+      "Trastuzumab",
+      "Tamoxifen"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a platinum-based chemotherapeutic agent?",
+    "options": [
+      "Vinorelbine",
+      "Doxorubicin",
+      "Carboplatin",
+      "Docetaxel"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a 1st-generation chemotherapy regimen for breast cancer?",
+    "options": [
+      "TC",
+      "TAC",
+      "CMF",
+      "AC-T"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is LEAST likely to be used in triple-negative breast cancer?",
+    "options": [
+      "AC-T",
+      "TC",
+      "Carboplatin",
+      "Tamoxifen"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a goal of chemotherapy in breast cancer management?",
+    "options": [
+      "Managing metastatic disease",
+      "Complete tumor resection",
+      "Slowing malignant cell growth",
+      "Preventing recurrence"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a long-term side effect of breast cancer chemotherapy?",
+    "options": [
+      "Cardiomyopathy",
+      "Hair loss",
+      "Nausea",
+      "Fatigue"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "All of the following are anthracyclines EXCEPT:",
+    "options": [
+      "Paclitaxel",
+      "Mitoxantrone",
+      "Doxorubicin",
+      "Epirubicin"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a recommended pre-treatment work-up for chemotherapy?",
+    "options": [
+      "Complete blood count (FBC)",
+      "Echocardiography",
+      "Bone density scan",
+      "MRI of the brain"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a short-term side effect of chemotherapy?",
+    "options": [
+      "Mucositis",
+      "Leukemia",
+      "Neuropathy",
+      "Alopecia"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Adjuvant chemotherapy is most critical in which of the following cases?",
+    "options": [
+      "Stage 0 DCIS",
+      "Lymph node-positive disease",
+      "HER2-negative, ER-positive tumors",
+      "Post-menopausal patients with small tumors"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "In taxane-resistant TNBC, which drug is under clinical trial?",
+    "options": [
+      "Gemcitabine",
+      "Ixabepilone",
+      "Capecitabine",
+      "Eribulin"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a hormonal therapy agent?",
+    "options": [
+      "Aromatase inhibitor",
+      "Trastuzumab",
+      "Tamoxifen",
+      "Fulvestrant"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which drug is an antibody-drug conjugate used in HER2-positive breast cancer?",
+    "options": [
+      "Trastuzumab emtansine (T-DM1)",
+      "Tamoxifen",
+      "Vinorelbine",
+      "Mitomycin-C"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a side effect of anthracyclines?",
+    "options": [
+      "Cardiomyopathy",
+      "Peripheral neuropathy",
+      "Alopecia",
+      "Bone demineralization"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "For locally advanced breast cancer (LABC), the standard of care is:",
+    "options": [
+      "Hormonal therapy",
+      "Immediate surgery",
+      "Neo-adjuvant chemotherapy",
+      "Radiation alone"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which regimen combines an anthracycline and a taxane?",
+    "options": [
+      "Capecitabine monotherapy",
+      "CMF",
+      "TC",
+      "AC-T"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a recommended strategy for managing chemotherapy-induced nausea?",
+    "options": [
+      "Opioids",
+      "Dexamethasone",
+      "5-HT3 antagonists",
+      "NK1 receptor antagonists"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which chemotherapeutic agent is classified as an antimetabolite?",
+    "options": [
+      "5-Fluorouracil",
+      "Cyclophosphamide",
+      "Vinorelbine",
+      "Docetaxel"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which chemotherapy backbone is used in the 3rd generation of breast cancer regimens?",
+    "options": [
+      "Anthracycline",
+      "Taxane",
+      "Antimetabolite",
+      "Platinum"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "In HER2-positive breast cancer, which agent is typically added to chemotherapy?",
+    "options": [
+      "Trastuzumab",
+      "Tamoxifen",
+      "Mitomycin-C",
+      "Capecitabine"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "A patient with taxane-resistant TNBC is LEAST likely to benefit from:",
+    "options": [
+      "Eribulin",
+      "Carboplatin",
+      "Ixabepilone",
+      "Paclitaxel"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Neo-adjuvant chemotherapy is primarily indicated in which scenario?",
+    "options": [
+      "Inflammatory breast cancer",
+      "Post-surgical recurrence",
+      "DCIS (Stage 0)",
+      "Stage IV metastatic disease"
+    ],
+    "correct_option": 0
+  }
+]

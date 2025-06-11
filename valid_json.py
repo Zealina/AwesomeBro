@@ -15,10 +15,13 @@ def randomize_options(data: Dict):
         raise ValueError("No OPTIONS in data")
     if data.get("correct_option") is None:
         raise ValueError("Correct OPTION is not set")
+    if type(data["correct_option"]) is str:
+        data["correct_option"] = int(data["correct_option"])
 
     correct_option = data["options"][data["correct_option"]]
     random.shuffle(data["options"])
     data["correct_option"] = data["options"].index(correct_option)
+    data["topic"] = "pharmacology"
     return data
 
 

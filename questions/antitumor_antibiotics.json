@@ -1,0 +1,222 @@
+[
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT true about Bleomycin?",
+    "options": [
+      "It causes dose-related pulmonary fibrosis",
+      "It intercalates DNA to inhibit replication",
+      "It induces single and double-strand DNA breaks",
+      "It is excreted primarily via the kidneys"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "All of the following are true regarding Mitomycin C EXCEPT:",
+    "options": [
+      "It is cell-cycle nonspecific",
+      "It cross-links DNA",
+      "It is activated via enzymatic reduction",
+      "It works best in oxygen-rich environments"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Mitomycin C requires what process for activation?",
+    "options": [
+      "Enzymatic reduction",
+      "Glucuronidation",
+      "Dephosphorylation",
+      "CYP450 oxidation"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Bleomycin-induced pulmonary toxicity is most associated with:",
+    "options": [
+      "Hepatic metabolism",
+      "Rapid IV infusion",
+      "Cardiac co-morbidities",
+      "Age and cumulative dose"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "All of the following are mechanisms of Anthracycline-induced cytotoxicity EXCEPT:",
+    "options": [
+      "Free radical formation",
+      "DNA intercalation",
+      "Topoisomerase II inhibition",
+      "Microtubule stabilization"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Mitomycin C is especially effective in combination with radiotherapy due to:",
+    "options": [
+      "Cross-resistance reversal",
+      "Anti-angiogenic synergy",
+      "Ability to sensitize hypoxic tumor cells",
+      "Enhanced DNA repair activation"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT an effect of Doxorubicin cardiotoxicity?",
+    "options": [
+      "Inhibition of ryanodine receptor",
+      "Dilated cardiomyopathy",
+      "Interference with microtubules",
+      "Free radical formation"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Why is Idarubicin preferred over Daunorubicin in AML induction therapy?",
+    "options": [
+      "Less cardiotoxicity",
+      "Higher intracellular activity",
+      "Higher oral bioavailability",
+      "Greater myelosuppression"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a semisynthetic analog of Daunorubicin, used in AML?",
+    "options": [
+      "Idarubicin",
+      "Doxorubicin",
+      "Epirubicin",
+      "Mitomycin C"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "What is the main mechanism of DNA damage by Bleomycin?",
+    "options": [
+      "Alkylation of DNA",
+      "Formation of DNA-Fe(II) complex causing strand breaks",
+      "Blocking mitotic spindle",
+      "Topoisomerase I inhibition"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "What is the main mechanism of action of Anthracyclines?",
+    "options": [
+      "Microtubule depolymerization",
+      "Topoisomerase II inhibition and DNA intercalation",
+      "Alkylation of guanine residues",
+      "Inhibition of topoisomerase I"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "What is the active metabolite of Mitomycin C that cross-links DNA?",
+    "options": [
+      "Epirubicinol",
+      "SN-38",
+      "Mitosene",
+      "Daunosamine"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "The most serious side effect of Bleomycin is:",
+    "options": [
+      "Hemorrhagic cystitis",
+      "Cardiotoxicity",
+      "Ototoxicity",
+      "Pulmonary fibrosis"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which Anthracycline is specifically indicated for node-positive breast cancer?",
+    "options": [
+      "Doxorubicin",
+      "Epirubicin",
+      "Daunorubicin",
+      "Idarubicin"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which agent is used as a cardioprotective drug to reduce Doxorubicin toxicity?",
+    "options": [
+      "Leucovorin",
+      "Mesna",
+      "Filgrastim",
+      "Dexrazoxane"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which phase of the cell cycle is Bleomycin most active in?",
+    "options": [
+      "G2 and M",
+      "G0",
+      "S",
+      "G1 and S"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "How is Bleomycin primarily excreted?",
+    "options": [
+      "Biliary",
+      "Lung metabolism",
+      "Renal",
+      "Skin excretion"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following explains why Doxorubicin can cause late-onset heart failure?",
+    "options": [
+      "DNA intercalation in cardiomyocytes",
+      "Blockade of Na\u207a/K\u207a ATPase",
+      "Irreversible inhibition of cardiac topoisomerase I",
+      "Accumulation of iron-mediated free radicals in cardiac mitochondria"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which cytotoxic antibiotic has limited efficacy in solid tumors but is effective in AML?",
+    "options": [
+      "Bleomycin",
+      "Daunorubicin",
+      "Mitomycin C",
+      "Epirubicin"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a serious side effect of Mitomycin C?",
+    "options": [
+      "Dilated cardiomyopathy",
+      "Neurotoxicity",
+      "Microangiopathic hemolytic anemia",
+      "Pulmonary fibrosis"
+    ],
+    "correct_option": 2
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "topic": "pharmacology",
+    "question": "In patients with rectal cancer, what is the standard neo-adjuvant treatment to improve sphincter preservation?",
+    "options": [
+      "CROSS regimen",
+      "Trastuzumab plus paclitaxel",
+      "FOLFOX",
+      "5-FU with radiation"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a common limitation of neo-adjuvant therapy?",
+    "options": [
+      "Potential delay in surgery due to toxicity",
+      "Tumor heterogeneity leading to mixed response",
+      "Tumor progression in non-responders",
+      "High levels of treatment adherence"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Adjuvant therapy should ideally be started within what time frame after surgery?",
+    "options": [
+      "Immediately post-op",
+      "Within 24 hours",
+      "After 12 weeks",
+      "3\u20138 weeks"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a goal of adjuvant therapy?",
+    "options": [
+      "Eradication of micrometastases",
+      "Elimination of visible tumor burden",
+      "Enhancement of overall survival",
+      "Improvement of disease-free survival"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which drug class used in adjuvant chemotherapy works by DNA intercalation and inhibition of topoisomerase II?",
+    "options": [
+      "Anthracyclines",
+      "Antimetabolites",
+      "Taxanes",
+      "Alkylating agents"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Adjuvant therapy is LEAST likely to be beneficial in which of the following cancers?",
+    "options": [
+      "Renal cell carcinoma",
+      "Lung cancer",
+      "Breast cancer",
+      "Colorectal cancer"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which patient factor is LEAST relevant when individualizing adjuvant chemotherapy?",
+    "options": [
+      "Tumor molecular markers",
+      "Personal income level",
+      "Performance status",
+      "Organ function"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a clinical benefit of neo-adjuvant therapy?",
+    "options": [
+      "Facilitates margin-positive resections",
+      "Avoids the need for chemotherapy post-surgery",
+      "Enables organ preservation in selected cancers",
+      "Requires fewer drug cycles than adjuvant therapy"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Neoadjuvant therapy is primarily indicated for which of the following purposes?",
+    "options": [
+      "To treat cancer recurrence",
+      "To provide palliative symptom control",
+      "To eliminate residual disease after surgery",
+      "To reduce tumor size before definitive surgery"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which is a major pharmacological challenge in adjuvant therapy?",
+    "options": [
+      "Increased tumor vascularity",
+      "Low patient compliance",
+      "Lack of imaging sensitivity",
+      "Drug resistance and tumor heterogeneity"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which is NOT typically a factor guiding the selection of adjuvant therapy?",
+    "options": [
+      "Tumor visibility on imaging",
+      "Tumor histology",
+      "Patient's genetic polymorphisms",
+      "Molecular markers"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following biomarkers can be used to monitor response to neoadjuvant therapy?",
+    "options": [
+      "CEA",
+      "LDL cholesterol",
+      "HbA1c",
+      "CRP"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following drugs acts by stabilizing microtubules and inhibiting mitosis?",
+    "options": [
+      "Methotrexate",
+      "Cyclophosphamide",
+      "Paclitaxel",
+      "5-FU"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which principle supports the use of multiple cycles in adjuvant chemotherapy?",
+    "options": [
+      "First-order log-kill hypothesis",
+      "Gompertzian model of drug clearance",
+      "Zero-order drug kinetics",
+      "Mendelian inheritance model"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a typical side effect concern for adjuvant therapy?",
+    "options": [
+      "Infertility",
+      "Neuropathy",
+      "Myelosuppression",
+      "Enhanced immunity"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "What best describes the mechanism of action of platinum-based chemotherapeutic agents?",
+    "options": [
+      "Topoisomerase inhibition",
+      "DNA cross-linking",
+      "Estrogen receptor blockade",
+      "Microtubule stabilization"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which is NOT a rationale for neoadjuvant therapy?",
+    "options": [
+      "Improving postoperative recovery speed",
+      "Tumor downstaging",
+      "Assessment of chemosensitivity",
+      "Early clearance of micrometastases"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following best explains the log-kill hypothesis in chemotherapy?",
+    "options": [
+      "Each dose kills a constant fraction of tumor cells",
+      "All tumor cells die in the first cycle",
+      "Tumor cells die only when oxygenated",
+      "Each dose kills a fixed number of cells"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following best defines adjuvant therapy in cancer care?",
+    "options": [
+      "Any treatment given after surgery when no visible tumor remains",
+      "A substitute for definitive surgical treatment",
+      "A therapy used to shrink tumors before surgery",
+      "A palliative intervention aimed at symptom control"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which combination regimen is commonly used in breast cancer adjuvant therapy?",
+    "options": [
+      "FOLFOX",
+      "CMF (Cyclophosphamide + Methotrexate + 5-FU)",
+      "CROSS",
+      "MAP"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following cancers commonly uses the CROSS regimen in neo-adjuvant therapy?",
+    "options": [
+      "Esophageal cancer",
+      "Osteosarcoma",
+      "Breast cancer",
+      "Colorectal cancer"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following combinations is a typical adjuvant regimen used in stage III colorectal cancer?",
+    "options": [
+      "CMF",
+      "AC-T",
+      "CROSS",
+      "FOLFOX"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following BEST explains the importance of tumor vascularity in neo-adjuvant therapy?",
+    "options": [
+      "It enhances tumor immune evasion",
+      "It determines radiation sensitivity",
+      "It allows better drug delivery and efficacy",
+      "It increases genetic polymorphism"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is the BEST surrogate marker of successful neoadjuvant therapy in breast cancer?",
+    "options": [
+      "Tumor vascularity",
+      "Reduction in CEA levels",
+      "Pathologic complete response (pCR)",
+      "Resolution of clinical symptoms"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "What is the definition of 'major pathologic response' (MPR) in neo-adjuvant therapy?",
+    "options": [
+      "Complete absence of tumor cells in the tissue",
+      "Elimination of circulating tumor cells",
+      "Reduction in tumor size on imaging by 50%",
+      "Presence of less than 10% residual tumor cells"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "The main pharmacological rationale behind the need for combination chemotherapy in adjuvant settings is:",
+    "options": [
+      "To minimize cost of therapy",
+      "To shorten treatment duration",
+      "To overcome resistance and tumor heterogeneity",
+      "To reduce surgical complications"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which statement about the timing of adjuvant therapy is CORRECT?",
+    "options": [
+      "Timing does not affect treatment outcome",
+      "Initiation beyond 8 weeks may reduce efficacy",
+      "It is contraindicated within 6 weeks of surgery",
+      "It is effective even when started after 12 weeks post-op"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following drugs is a hormonal agent used in adjuvant therapy of ER+ breast cancer?",
+    "options": [
+      "Capecitabine",
+      "Tamoxifen",
+      "Paclitaxel",
+      "Doxorubicin"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is FALSE regarding the use of neoadjuvant therapy in NSCLC?",
+    "options": [
+      "Improves operability in bulky tumors",
+      "Used in select Stage II and IIIA tumors",
+      "Guarantees pathological complete response",
+      "Improves mediastinal nodal clearance"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which tumor type benefits from the use of the MAP regimen as neoadjuvant chemotherapy?",
+    "options": [
+      "Breast cancer",
+      "Lung cancer",
+      "Osteosarcoma",
+      "Colorectal cancer"
+    ],
+    "correct_option": 2
+  }
+]

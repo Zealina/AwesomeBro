@@ -1,0 +1,332 @@
+[
+  {
+    "topic": "pharmacology",
+    "question": "The suffix '-ximab' indicates that a monoclonal antibody is:",
+    "options": [
+      "Conjugated to a toxin",
+      "Humanized",
+      "Fully murine",
+      "Chimeric"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a mechanism of action for trastuzumab?",
+    "options": [
+      "Direct DNA intercalation",
+      "Inhibition of HER2/neu dimerization",
+      "Complement-dependent cytotoxicity (CDC)",
+      "ADCC (antibody-dependent cellular cytotoxicity)"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which mechanism is LEAST likely involved in monoclonal antibody (moAb) cancer cell killing?",
+    "options": [
+      "Direct inhibition of DNA replication",
+      "Complement-dependent cytotoxicity (CDC)",
+      "Antibody-dependent cellular cytotoxicity (ADCC)",
+      "Induction of apoptosis"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which monoclonal antibody is used intravitreally for age-related macular degeneration?",
+    "options": [
+      "Rituximab",
+      "Bevacizumab",
+      "Alemtuzumab",
+      "Cetuximab"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Cetuximab (Erbitux) binds to which receptor?",
+    "options": [
+      "VEGFR",
+      "HER1 (EGFR)",
+      "CD33",
+      "HER2/neu"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Gemtuzumab ozogamicin (Mylotarg) is a conjugate of an antibody and which cytotoxic agent?",
+    "options": [
+      "Doxorubicin",
+      "Paclitaxel",
+      "Methotrexate",
+      "Calicheamicin"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a toxicity of gemtuzumab ozogamicin?",
+    "options": [
+      "Hepatotoxicity",
+      "GI perforation",
+      "Hypertension",
+      "Cardiomyopathy"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which toxicity is unique to alemtuzumab compared to other monoclonal antibodies?",
+    "options": [
+      "Infusion reactions",
+      "Hypertension",
+      "Cardiomyopathy",
+      "Pancytopenia"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "The half-life of rituximab is approximately:",
+    "options": [
+      "4-5 days",
+      "3-4 weeks",
+      "2 weeks",
+      "3 days"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a clearance mechanism for monoclonal antibodies?",
+    "options": [
+      "Target-mediated clearance (drug-antigen complex)",
+      "Renal excretion",
+      "Pinocytosis",
+      "Lysosomal degradation"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a bispecific monoclonal antibody (still in trials)?",
+    "options": [
+      "Trastuzumab",
+      "Bevacizumab",
+      "Rituximab",
+      "Blinatumomab"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "What is the primary structural difference between humanized (suffix '-zumab') and chimeric (suffix '-ximab') monoclonal antibodies?",
+    "options": [
+      "Humanized antibodies are entirely non-human; chimeric antibodies are fully human.",
+      "Chimeric antibodies target multiple epitopes; humanized antibodies target one.",
+      "Humanized antibodies are conjugated to toxins; chimeric antibodies are naked.",
+      "Humanized antibodies have near-human amino acid sequences; chimeric antibodies contain larger non-human protein stretches."
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which monoclonal antibody is cleared faster in males and patients with high tumor burden?",
+    "options": [
+      "Alemtuzumab",
+      "Rituximab",
+      "Bevacizumab",
+      "Trastuzumab"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is NOT a reported toxicity of trastuzumab?",
+    "options": [
+      "Acute infusion reactions",
+      "Cardiomyopathy",
+      "Fatigue",
+      "Veno-occlusive disease"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a severe toxicity of rituximab?",
+    "options": [
+      "Osteoporosis",
+      "GI perforation",
+      "Hepatotoxicity",
+      "Late-onset neutropenia"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which monoclonal antibody is approved for pemphigus vulgaris?",
+    "options": [
+      "Bevacizumab",
+      "Rituximab",
+      "Cetuximab",
+      "Trastuzumab"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Alemtuzumab (Campath) targets which antigen?",
+    "options": [
+      "CD33",
+      "CD52",
+      "CD20",
+      "HER1"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Rituximab (Rituxan) is a chimeric antibody targeting:",
+    "options": [
+      "HER2/neu",
+      "EGFR",
+      "VEGF",
+      "CD20"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which monoclonal antibody is associated with severe skin toxicities?",
+    "options": [
+      "Gemtuzumab ozogamicin",
+      "Rituximab",
+      "Bevacizumab",
+      "Cetuximab"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Bevacizumab (Avastin) targets which of the following?",
+    "options": [
+      "HER2/neu receptor",
+      "Vascular endothelial growth factor (VEGF)",
+      "EGFR (HER1)",
+      "CD20 on B cells"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which monoclonal antibody is associated with the risk of veno-occlusive disease?",
+    "options": [
+      "Trastuzumab",
+      "Rituximab",
+      "Gemtuzumab ozogamicin",
+      "Bevacizumab"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which cancer type is gemtuzumab ozogamicin used to treat?",
+    "options": [
+      "CD33-positive AML",
+      "Non-small cell lung cancer",
+      "Colorectal cancer",
+      "HER2-positive breast cancer"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a major toxicity of bevacizumab linked to its anti-VEGF action?",
+    "options": [
+      "Hypertension",
+      "Peripheral neuropathy",
+      "Cardiomyopathy",
+      "Bone marrow suppression"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Trastuzumab (Herceptin) is indicated for cancers that overexpress:",
+    "options": [
+      "HER2/neu",
+      "VEGFR",
+      "CD52",
+      "CD33"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a chimeric antibody?",
+    "options": [
+      "Alemtuzumab",
+      "Bevacizumab",
+      "Cetuximab",
+      "Trastuzumab"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a common side effect of cetuximab?",
+    "options": [
+      "Bone demineralization",
+      "Cardiomyopathy",
+      "Acneiform rash",
+      "Veno-occlusive disease"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is a naked monoclonal antibody?",
+    "options": [
+      "Ibritumomab tiuxetan (radioactive conjugate)",
+      "Trastuzumab",
+      "Gemtuzumab ozogamicin",
+      "90Y-ibritumomab tiuxetan"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "The bioavailability of monoclonal antibodies administered intravenously is typically:",
+    "options": [
+      "Variable",
+      "100%",
+      "75%",
+      "50%"
+    ],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which condition is alemtuzumab NOT approved to treat?",
+    "options": [
+      "Colorectal cancer",
+      "Multiple sclerosis",
+      "Non-Hodgkin\u2019s lymphoma",
+      "B-cell chronic lymphocytic leukemia (B-CLL)"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which monoclonal antibody is used in Wegener\u2019s granulomatosis?",
+    "options": [
+      "Cetuximab",
+      "Bevacizumab",
+      "Alemtuzumab",
+      "Rituximab"
+    ],
+    "correct_option": 3
+  }
+]
