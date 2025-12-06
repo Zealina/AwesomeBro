@@ -1,0 +1,307 @@
+[
+  {
+    "topic": "pharmacology",
+    "question": "Concerning G-Protein Coupled Receptors",
+    "options": ["IP₃", "DAG", "Calcium", "cAMP", "None of the above"],
+    "correct_option": 4
+  },
+  {
+    "topic": "pharmacology",
+    "question": "The no-effect dose:",
+    "options": [
+      "Is the dose under which no specified toxic effect is observed",
+      "Is the dose at which toxicity first becomes visible",
+      "Is always lower than the median lethal dose",
+      "Cannot be determined experimentally",
+      "Is the same as the maximum tolerated dose"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Concerning partial agonists:",
+    "options": [
+      "At full receptor occupancy they reduce the effect of a full agonist",
+      "They always produce greater efficacy than a full agonist",
+      "They cannot act as antagonists",
+      "They require more receptors to achieve maximal response",
+      "They bind only when the full agonist is absent"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Regarding agonists:",
+    "options": [
+      "A full agonist always has greater affinity than a partial agonist",
+      "A partial agonist always has greater affinity",
+      "Affinity is unrelated to agonist classification",
+      "Efficacy determines occupancy",
+      "Partial agonists never compete with full agonists"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Effects of non-competitive antagonists on agonist activity:",
+    "options": [
+      "They decrease the maximal response",
+      "They shift the curve to the right without changing maximal response",
+      "They are surmountable",
+      "They increase efficacy of the agonist",
+      "They behave exactly like competitive antagonists"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Regarding receptor structure:",
+    "options": [
+      "Receptors have defined protein conformations",
+      "Many are glycosylated",
+      "Lipid interactions can stabilize some receptors",
+      "Some include nucleic acid elements",
+      "Structure influences ligand selectivity"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "On renal handling of ionised drugs:",
+    "options": [
+      "An ionised drug is more likely to be excreted in urine",
+      "Ionisation always prevents excretion",
+      "Only unionised drugs are filtered",
+      "Ionised drugs are fully reabsorbed",
+      "Ionisation has no effect on renal clearance"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is odd concerning weak acids:",
+    "options": [
+      "Weak acids are mostly ionised in acidic pH",
+      "Weak acids are mostly unionised in basic pH",
+      "Gastric pH does not affect ionisation",
+      "Aspirin is neutral at all pH values",
+      "Ionisation determines absorption"
+    ],
+    "correct_option": 4
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Concerning drug combinations:",
+    "options": [
+      "Additive effect involves antagonists",
+      "Potentiation describes increased effect when one drug enhances another",
+      "Synergy produces a combined effect greater than the individual effects",
+      "Both potentiation and synergy enhance drug effects",
+      "None of the above are correct"
+    ],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Non-receptor mediated mechanisms include which of the following?",
+    "options": ["Antacids", "Laxatives", "Benzodiazepines", "Only A and B", "All of the above"],
+    "correct_option": 3
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following hormones uses GPCR:",
+    "options": ["Cortisol", "Insulin", "Glucagon", "All of the above", "None of the above"],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following is administered sublingually to bypass first-pass metabolism?",
+    "options": ["Aspirin", "Glyceryl trinitrate", "Paracetamol", "Vincristine"],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Non–receptor–related mechanisms of drug action include all except:",
+    "options": [
+      "Antacids",
+      "Cholestyramine resin",
+      "Mercaptopurine sulphate",
+      "Mannitol",
+      "None of the above"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Concerning Therapeutic Index (TI):",
+    "options": [
+      "The larger the ratio, the greater the safety",
+      "The larger the ratio, the lesser the safety",
+      "The smaller the ratio, the greater the safety",
+      "All of the above",
+      "None of the above"
+    ],
+    "correct_option": 0
+  },
+  {
+    "topic": "pharmacology",
+    "question": "What is the half-life of a drug whose Vd and clearance are 80 L and 4 L/hr?",
+    "options": ["0.003", "14", "78", "222", "139"],
+    "correct_option": 1
+  },
+  {
+    "topic": "pharmacology",
+    "question": "All of the following are correct about the intravenous route of administration:",
+    "options": [
+      "Most convenient to use",
+      "It is suitable for oil-based preparations",
+      "It is not easy to recall once administered",
+      "Suspensions can be administered",
+      "None of the above"
+    ],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Drugs that act together to have an effect that is greater than the sum of the effect of both drugs are:",
+    "options": ["A. Antagonist", "B. Potentiators", "C. Synergistic", "D. B and C", "E. None of the above"],
+    "correct_option": 3
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following statements about pharmacological principles is true?",
+    "options": [
+      "LD₅₀ represents the maximum dose that kills 50% of participants in a clinical trial.",
+      "If renal clearance is 3 L/min and hepatic clearance is 5 L/min, the total clearance is 15 L/min.",
+      "An antagonist possesses activity but lacks potency, intrinsic affinity, and efficacy.",
+      "Tolerance typically develops over days to weeks.",
+      "A drug with a very low therapeutic window is best administered via continuous IV infusion."
+    ],
+    "correct_option": 3
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Pick out the right statement regarding microsomal oxidation:",
+    "options": [
+      "Microsomal oxidation always results in inactivation of a compound",
+      "Microsomal oxidation results in a decrease of compound toxicity",
+      "Microsomal oxidation results in an increase of ionization and water solubility of a drug",
+      "Microsomal oxidation results in an increase of lipid solubility of a drug thus its excretion from the organism is facilitated"
+    ],
+    "correct_option": 2
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Stimulation of liver microsomal enzymes can:",
+    "options": [
+      "Require the dose increase of some drugs",
+      "Require the dose decrease of some drugs",
+      "Prolong the duration of action of a drug",
+      "Intensify the unwanted reactions of a drug"
+    ],
+    "correct_option": 0
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "All of the following statements about efficacy and potency are true EXCEPT:",
+    "options": [
+      "Efficacy is usually a more important clinical consideration than potency",
+      "Efficacy is the maximum effect of a drug",
+      "Potency is a comparative measure, referring to doses required to produce the same effect",
+      "The ED50 is a measure of a drug’s efficacy"
+    ],
+    "correct_option": 3
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Therapeutic dose:",
+    "options": [
+      "The amount of a substance to produce the minimal biological effect",
+      "The amount of a substance to produce effects hazardous for an organism",
+      "The amount of a substance to produce the required effect in most patients",
+      "The amount of a substance to accelerate an increase of concentration of medicine in an organism"
+    ],
+    "correct_option": 2
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Pick out the correct definition of a toxic dose:",
+    "options": [
+      "The amount of substance to produce the minimal biological effect",
+      "The amount of substance to produce effects hazardous for an organism",
+      "The amount of substance to produce the necessary effect in most patients",
+      "The amount of substance to fast creation of high concentration of medicine in an organism"
+    ],
+    "correct_option": 1
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Which effect may lead to toxic reactions when a drug is taken continuously or repeatedly?",
+    "options": ["Refractoriness", "Cumulative effect", "Tolerance", "Tachyphylaxis"],
+    "correct_option": 1
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Drugs that act together to produce a sum of their individual effects are called:",
+    "options": ["Antagonists", "Potentiators", "Synergistic", "Additive", "None of the above"],
+    "correct_option": 3
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Calculate the half-life for a drug with Vd = 40 L and Clearance = 4 L/hr:",
+    "options": ["0.03 hrs", "3.5 hrs", "6.93 hrs", "10 hrs", "20 hrs"],
+    "correct_option": 2
+  },
+  {
+    "topic": "pharmacology",
+    "question": "Concerning therapeutic index:",
+    "options": [
+      "The larger the ratio, the greater the safety",
+      "The larger the ratio, the lesser the safety",
+      "The smaller the ratio, the greater the safety",
+      "None of the above",
+      "All of the above"
+    ],
+    "correct_option": 0
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "About LD50:",
+    "options": [
+      "The dose required to kill 50% of the population of your test subjects",
+      "The dose required to kill 50% of the population of your control test subjects",
+      "The dose required to kill 50% of the population of your control subjects",
+      "All of the above"
+    ],
+    "correct_option": 0
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Absorption must have taken place after administration at an extravascular site.",
+    "options": ["True", "False"],
+    "correct_option": 0
+  },
+
+  {
+    "topic": "pharmacology",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Inverse agonist has no efficacy",
+      "A partial agonist acts as an antagonist in the presence of a full agonist",
+      "Orthosteric receptors bind ligands at the primary active site",
+      "Orphan drugs are developed for rare diseases"
+    ],
+    "correct_option": 1
+  }
+]
